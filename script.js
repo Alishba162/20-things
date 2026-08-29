@@ -26,27 +26,27 @@ const thingsList = [
 
     {
         title: "the gym",
-        description: "walking past a gym and my brain goes... oh, him."
+        description: "Whenever I think of workout or gym my brain goes....oh, him."
     },
 
     {
         title: "late nights",
-        description: "something about being awake at 2am will always remind me of you."
+        description: "i still rmrbr and miss those late night talks we used to have on dc"
     },
 
     {
-        title: "your songs",
-        description: "i hear them and suddenly you're in my head again."
+        title: "Poetry",
+        description: "Before, I never really understood poetry, and I wasn’t interested in it either. But now I can understand it, just because I think it explains my feelings for you so, so beautifully."
     },
 
     {
-        title: "your favorite color",
-        description: "i didn't even notice this color that much before you."
+        title: "White Shalwar kameez",
+        description: "honestly i never ever thought k white shalwar kameez can look this good on someone."
     },
 
     {
-        title: "your usual drink",
-        description: "i can't see this without thinking about your usual order."
+        title: "Shaam ki chai",
+        description: "I don’t know if you remember it or not, but once we had this really cute conversation about making shaam ki chai together, and I swear, whenever I’m making shaam ki chai, that conversation always comes to my mind."
     },
 
     {
@@ -55,8 +55,8 @@ const thingsList = [
     },
 
     {
-        title: "your hoodie",
-        description: "it's just a hoodie, but obviously my brain had to make it about you."
+        title: "your jacket",
+        description: "i kinda like ur blue jacket you are wearing everytime in winters, actually when i saw u for the very first time u were wearing that jacket lol."
     },
 
     {
@@ -66,12 +66,12 @@ const thingsList = [
 
     {
         title: "that one photo",
-        description: "you probably don't even like this picture, but i do."
+        description: "i really love your whastapp wali pfp i mean i really love lovee."
     },
 
     {
-        title: "your laugh",
-        description: "sometimes i hear someone laugh and for half a second i think it's you."
+        title: "Your Laugh",
+        description: "Omg, you look so cute when you laugh or blush. It honestly gives me butterflies, lol. That’s why I always notice whenever you’re laughing or smiling."
     },
 
     {
@@ -80,13 +80,13 @@ const thingsList = [
     },
 
     {
-        title: "our inside jokes",
-        description: "probably makes absolutely no sense to anyone else, which makes it better."
+        title: "Jokes",
+        description: "i miss wo hamare usual flirty and funny jokes."
     },
 
     {
         title: "that one place",
-        description: "it's just a place now, but i'll always remember you there."
+        description: "No matter what happens, I will never forget the first time I saw you on the C Block stairs, near the lift. I literally froze for a second, I was like, “Omg, that’s actually him!"
     },
 
     {
