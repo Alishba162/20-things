@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: #070707;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   INTRO SCREEN
+========================= */
+
+#intro {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #32101f 0%,
+            #160a10 40%,
+            #070707 75%
+        );
+}
+
+
+/* =========================
+   SMALL PINK TEXT
+========================= */
+
+.tiny-heading {
+    color: #ff6f9d;
+
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   BIG TITLE
+========================= */
+
+h1 {
+    font-family: 'DM Serif Display', serif;
+
+    font-size: clamp(45px, 8vw, 85px);
+
+    font-weight: normal;
+
+    line-height: 1.05;
+
+    color: #ffffff;
+
+    text-shadow:
+        0 0 30px rgba(255, 65, 125, 0.15);
+}
+
+
+/* =========================
+   SUBTITLE
+========================= */
+
+.subtitle {
+    color: #bda5ae;
+
+    font-size: 14px;
+
+    margin-top: 25px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+button {
+    margin-top: 40px;
+
+    padding: 14px 32px;
+
+    border-radius: 50px;
+
+    border: 1px solid #ff4f87;
+
+    background: transparent;
+
+    color: #ff78a3;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+button:hover {
+    background: #ff4f87;
+
+    color: #070707;
+
+    box-shadow:
+        0 0 30px rgba(255, 79, 135, 0.5);
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   FLOATING HEARTS
+========================= */
+
+.floating-hearts span {
+    position: fixed;
+
+    color: #ff4f87;
+
+    font-size: 16px;
+
+    opacity: 0.25;
+
+    pointer-events: none;
+
+    animation: float 6s infinite ease-in-out;
+}
+
+
+.floating-hearts span:nth-child(1) {
+    left: 10%;
+    top: 20%;
+}
+
+
+.floating-hearts span:nth-child(2) {
+    left: 25%;
+    top: 70%;
+    animation-delay: 1s;
+}
+
+
+.floating-hearts span:nth-child(3) {
+    left: 45%;
+    top: 15%;
+    animation-delay: 2s;
+}
+
+
+.floating-hearts span:nth-child(4) {
+    left: 70%;
+    top: 65%;
+    animation-delay: 3s;
+}
+
+
+.floating-hearts span:nth-child(5) {
+    left: 85%;
+    top: 25%;
+    animation-delay: 4s;
+}
+
+
+.floating-hearts span:nth-child(6) {
+    left: 55%;
+    top: 80%;
+    animation-delay: 2.5s;
+}
+
+
+@keyframes float {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-18px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================
+   20 THINGS
+========================= */
+
+#things {
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #26101a,
+            #070707 70%
+        );
+}
+
+
+#number {
+    color: #ff6f9d;
+
+    font-size: 13px;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 35px;
+}
+
+
+.heart {
+    color: #ff4f87;
+
+    font-size: 28px;
+
+    margin-bottom: 15px;
+
+    animation: heartPulse 2s infinite;
+}
+
+
+@keyframes heartPulse {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+
+#things h2 {
+    font-family: 'DM Serif Display', serif;
+
+    font-size: clamp(45px, 8vw, 75px);
+
+    font-weight: normal;
+}
+
+
+#description {
+    max-width: 550px;
+
+    color: #c7b4bc;
+
+    line-height: 1.9;
+
+    margin-top: 20px;
+
+    font-size: 15px;
+}
+
+
+/* =========================
+   FINAL SCREEN
+========================= */
+
+#ending {
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #4b1429,
+            #15090f 45%,
+            #070707 80%
+        );
+}
+
+
+#ending h2 {
+    font-family: 'DM Serif Display', serif;
+
+    font-size: clamp(80px, 15vw, 160px);
+
+    font-weight: normal;
+
+    color: #ff78a3;
+
+    text-shadow:
+        0 0 40px rgba(255, 78, 135, 0.35);
+}
+
+
+#ending p {
+    max-width: 500px;
+
+    color: #d6c0c8;
+
+    line-height: 1.8;
+
+    margin-top: 20px;
+}
+
+
+#ending .birthday-message {
+    color: #ff78a3;
+
+    margin-top: 35px;
+
+    font-size: 18px;
+}
+
+
+/* =========================
+   HIDDEN SECTIONS
+========================= */
+
+.hidden {
+    display: none !important;
+}
