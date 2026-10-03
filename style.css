@@ -8,6 +8,11 @@
 }
 
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
     background: #070707;
     color: #ffffff;
@@ -147,6 +152,8 @@ button:hover {
     pointer-events: none;
 
     animation: float 6s infinite ease-in-out;
+
+    z-index: 0;
 }
 
 
@@ -298,7 +305,7 @@ button:hover {
 
 
 /* =========================
-   FINAL SCREEN
+   FINAL "YOU" SCREEN
 ========================= */
 
 #ending {
@@ -361,9 +368,182 @@ button:hover {
 
 
 /* =========================
+   SLIDE 21 & SLIDE 22
+========================= */
+
+#slide21,
+#slide22 {
+
+    min-height: 100vh;
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 70px 25px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #32101f 0%,
+            #160a10 45%,
+            #070707 85%
+        );
+
+    overflow-y: auto;
+}
+
+
+/* =========================
+   TEXT INSIDE SLIDES
+========================= */
+
+#slide21 p,
+#slide22 p {
+
+    width: 100%;
+
+    max-width: 750px;
+
+    color: #d6c0c8;
+
+    font-size: 15px;
+
+    line-height: 1.9;
+
+    margin-top: 20px;
+
+}
+
+
+/* First small heading */
+
+#slide21 .tiny-heading,
+#slide22 .tiny-heading {
+
+    color: #ff6f9d;
+
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 15px;
+
+    margin-top: 0;
+}
+
+
+/* =========================
+   SLIDE 21 / 22 BUTTONS
+========================= */
+
+#slide21 button,
+#slide22 button {
+
+    margin-top: 35px;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   EXTRA SPACE BETWEEN
+   LONG PARAGRAPHS
+========================= */
+
+#slide21 p + p,
+#slide22 p + p {
+
+    margin-top: 25px;
+}
+
+
+/* =========================
    HIDDEN SECTIONS
 ========================= */
 
 .hidden {
     display: none !important;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    #intro,
+    #things,
+    #ending,
+    #slide21,
+    #slide22 {
+
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    #description {
+
+        font-size: 14px;
+
+        line-height: 1.8;
+    }
+
+
+    #slide21,
+    #slide22 {
+
+        justify-content: flex-start;
+
+        padding-top: 60px;
+
+        padding-bottom: 60px;
+    }
+
+
+    #slide21 p,
+    #slide22 p {
+
+        font-size: 14px;
+
+        line-height: 1.85;
+
+        max-width: 100%;
+    }
+
+
+    #slide21 .tiny-heading,
+    #slide22 .tiny-heading {
+
+        font-size: 10px;
+
+        letter-spacing: 3px;
+    }
+
+
+    #ending h2 {
+
+        font-size: clamp(75px, 25vw, 120px);
+    }
+
+
+    button {
+
+        padding: 13px 28px;
+
+        font-size: 13px;
+    }
+
 }
