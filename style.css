@@ -22,7 +22,7 @@ body {
 
 
 /* =========================
-   INTRO SCREEN
+   INTRO
 ========================= */
 
 #intro {
@@ -47,10 +47,6 @@ body {
 }
 
 
-/* =========================
-   SMALL PINK TEXT
-========================= */
-
 .tiny-heading {
     color: #ff6f9d;
 
@@ -63,10 +59,6 @@ body {
     margin-bottom: 25px;
 }
 
-
-/* =========================
-   BIG TITLE
-========================= */
 
 h1 {
     font-family: 'DM Serif Display', serif;
@@ -83,10 +75,6 @@ h1 {
         0 0 30px rgba(255, 65, 125, 0.15);
 }
 
-
-/* =========================
-   SUBTITLE
-========================= */
 
 .subtitle {
     color: #bda5ae;
@@ -223,11 +211,9 @@ button:hover {
     min-height: 100vh;
 
     display: flex;
-
     flex-direction: column;
 
     justify-content: center;
-
     align-items: center;
 
     text-align: center;
@@ -305,18 +291,16 @@ button:hover {
 
 
 /* =========================
-   FINAL "YOU" SCREEN
+   FINAL "YOU"
 ========================= */
 
 #ending {
     min-height: 100vh;
 
     display: flex;
-
     flex-direction: column;
 
     justify-content: center;
-
     align-items: center;
 
     text-align: center;
@@ -368,7 +352,7 @@ button:hover {
 
 
 /* =========================
-   SLIDE 21 & SLIDE 22
+   SLIDE 21 & 22
 ========================= */
 
 #slide21,
@@ -379,11 +363,9 @@ button:hover {
     width: 100%;
 
     display: flex;
-
     flex-direction: column;
 
-    justify-content: center;
-
+    justify-content: flex-start;
     align-items: center;
 
     text-align: center;
@@ -397,14 +379,8 @@ button:hover {
             #160a10 45%,
             #070707 85%
         );
-
-    overflow-y: auto;
 }
 
-
-/* =========================
-   TEXT INSIDE SLIDES
-========================= */
 
 #slide21 p,
 #slide22 p {
@@ -420,11 +396,8 @@ button:hover {
     line-height: 1.9;
 
     margin-top: 20px;
-
 }
 
-
-/* First small heading */
 
 #slide21 .tiny-heading,
 #slide22 .tiny-heading {
@@ -437,29 +410,11 @@ button:hover {
 
     text-transform: uppercase;
 
-    margin-bottom: 15px;
-
     margin-top: 0;
-}
-
-
-/* =========================
-   SLIDE 21 / 22 BUTTONS
-========================= */
-
-#slide21 button,
-#slide22 button {
-
-    margin-top: 35px;
 
     margin-bottom: 10px;
 }
 
-
-/* =========================
-   EXTRA SPACE BETWEEN
-   LONG PARAGRAPHS
-========================= */
 
 #slide21 p + p,
 #slide22 p + p {
@@ -468,8 +423,17 @@ button:hover {
 }
 
 
+#slide21 button,
+#slide22 button {
+
+    margin-top: 35px;
+
+    margin-bottom: 20px;
+}
+
+
 /* =========================
-   HIDDEN SECTIONS
+   HIDDEN
 ========================= */
 
 .hidden {
@@ -505,11 +469,9 @@ button:hover {
     #slide21,
     #slide22 {
 
-        justify-content: flex-start;
+        padding-top: 55px;
 
-        padding-top: 60px;
-
-        padding-bottom: 60px;
+        padding-bottom: 55px;
     }
 
 
@@ -519,8 +481,6 @@ button:hover {
         font-size: 14px;
 
         line-height: 1.85;
-
-        max-width: 100%;
     }
 
 
@@ -547,3 +507,4 @@ button:hover {
     }
 
 }
+
