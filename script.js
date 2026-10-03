@@ -108,35 +108,55 @@ const thingsList = [
 
 
 // ================================
-// FIND THE ELEMENTS ON OUR PAGE
+// FIND ELEMENTS
 // ================================
 
-const startButton = document.getElementById("startButton");
+const startButton =
+    document.getElementById("startButton");
 
-const nextButton = document.getElementById("nextButton");
+const nextButton =
+    document.getElementById("nextButton");
 
-const intro = document.getElementById("intro");
+const intro =
+    document.getElementById("intro");
 
-const things = document.getElementById("things");
+const things =
+    document.getElementById("things");
 
-const ending = document.getElementById("ending");
+const ending =
+    document.getElementById("ending");
 
-const number = document.getElementById("number");
+const endingNextButton =
+    document.getElementById("endingNextButton");
 
-const title = document.getElementById("title");
+const slide21 =
+    document.getElementById("slide21");
 
-const description = document.getElementById("description");
+const slide21NextButton =
+    document.getElementById("slide21NextButton");
+
+const slide22 =
+    document.getElementById("slide22");
+
+const number =
+    document.getElementById("number");
+
+const title =
+    document.getElementById("title");
+
+const description =
+    document.getElementById("description");
 
 
 // ================================
-// KEEP TRACK OF WHICH THING WE'RE ON
+// CURRENT THING
 // ================================
 
 let currentThing = 0;
 
 
 // ================================
-// START BUTTON
+// START
 // ================================
 
 startButton.addEventListener("click", function() {
@@ -145,11 +165,13 @@ startButton.addEventListener("click", function() {
 
     things.classList.remove("hidden");
 
+    window.scrollTo(0, 0);
+
 });
 
 
 // ================================
-// NEXT BUTTON
+// 20 THINGS
 // ================================
 
 nextButton.addEventListener("click", function() {
@@ -157,7 +179,10 @@ nextButton.addEventListener("click", function() {
     currentThing++;
 
 
-    // If we've reached the end...
+    // ================================
+    // AFTER THE 20TH THING
+    // SHOW FINAL "YOU" SCREEN
+    // ================================
 
     if (currentThing >= thingsList.length) {
 
@@ -165,25 +190,64 @@ nextButton.addEventListener("click", function() {
 
         ending.classList.remove("hidden");
 
+        window.scrollTo(0, 0);
+
         return;
     }
 
 
-    // Change the number
+    // ================================
+    // UPDATE NUMBER
+    // ================================
 
     number.textContent =
         String(currentThing + 1).padStart(2, "0") + " / 20";
 
 
-    // Change the title
+    // ================================
+    // UPDATE TITLE
+    // ================================
 
     title.textContent =
         thingsList[currentThing].title;
 
 
-    // Change the sentence
+    // ================================
+    // UPDATE DESCRIPTION
+    // ================================
 
     description.textContent =
         thingsList[currentThing].description;
 
 });
+
+
+// ================================
+// FINAL "YOU" → SLIDE 21
+// ================================
+
+endingNextButton.addEventListener("click", function() {
+
+    ending.classList.add("hidden");
+
+    slide21.classList.remove("hidden");
+
+    window.scrollTo(0, 0);
+
+});
+
+
+// ================================
+// SLIDE 21 → SLIDE 22
+// ================================
+
+slide21NextButton.addEventListener("click", function() {
+
+    slide21.classList.add("hidden");
+
+    slide22.classList.remove("hidden");
+
+    window.scrollTo(0, 0);
+
+});
+
