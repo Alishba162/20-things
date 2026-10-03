@@ -121,6 +121,16 @@ const things = document.getElementById("things");
 
 const ending = document.getElementById("ending");
 
+const endingNext = document.getElementById("endingNext");
+
+const letter1 = document.getElementById("letter1");
+
+const letter2 = document.getElementById("letter2");
+
+const letter1Next = document.getElementById("letter1Next");
+
+const letter2Next = document.getElementById("letter2Next");
+
 const number = document.getElementById("number");
 
 const title = document.getElementById("title");
@@ -157,16 +167,16 @@ nextButton.addEventListener("click", function() {
     currentThing++;
 
 
-    // If we've reached the end...
+        // After Thing 20, show Letter 1
 
     if (currentThing >= thingsList.length) {
 
-        things.classList.add("hidden");
+    things.classList.add("hidden");
 
-        ending.classList.remove("hidden");
+    ending.classList.remove("hidden");
 
-        return;
-    }
+    return;
+}
 
 
     // Change the number
@@ -182,6 +192,37 @@ nextButton.addEventListener("click", function() {
 
 
     // Change the sentence
+
+    description.textContent =
+        thingsList[currentThing].description;
+
+});
+// ================================
+// LETTER 1 → LETTER 2
+// ================================
+
+letter1Next.addEventListener("click", function() {
+
+    letter1.classList.add("hidden");
+
+    letter2.classList.remove("hidden");
+
+});
+
+
+// ================================
+
+// ================================
+// YOU SCREEN → FIRST TEXT
+// ================================
+
+endingNext.addEventListener("click", function() {
+
+    ending.classList.add("hidden");
+
+    letter1.classList.remove("hidden");
+
+});
 
     description.textContent =
         thingsList[currentThing].description;
