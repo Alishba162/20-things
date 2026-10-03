@@ -187,8 +187,3 @@ nextButton.addEventListener("click", function() {
         thingsList[currentThing].description;
 
 });
-
-    window.scrollTo(0, 0);
-
-});
-
