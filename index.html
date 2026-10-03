@@ -1,230 +1,549 @@
-<!DOCTYPE html>
-<html lang="en">
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600&display=swap');
 
-<head>
-    <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <title>20 Things That Remind Me of You ♡</title>
 
-    <link rel="stylesheet" href="style.css">
-</head>
+html {
+    scroll-behavior: smooth;
+}
 
 
-<body>
+body {
+    background: #070707;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
 
-    <!-- FLOATING HEARTS -->
 
-    <div class="floating-hearts">
+/* =========================
+   INTRO SCREEN
+========================= */
 
-        <span>♡</span>
-        <span>♡</span>
-        <span>♡</span>
-        <span>♡</span>
-        <span>♡</span>
-        <span>♡</span>
+#intro {
+    min-height: 100vh;
 
-    </div>
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+    text-align: center;
 
-    <!-- INTRODUCTION -->
+    padding: 30px;
 
-    <section id="intro">
+    background:
+        radial-gradient(
+            circle at center,
+            #32101f 0%,
+            #160a10 40%,
+            #070707 75%
+        );
+}
 
-        <p class="tiny-heading"> 
-            for someone special ♡ 
-        </p>
 
-        <h1>
-            20 Things<br>
-            That Remind Me Of You
-        </h1>
+/* =========================
+   SMALL PINK TEXT
+========================= */
 
-        <p class="subtitle">
-            one for every year you've been here
-        </p>
+.tiny-heading {
+    color: #ff6f9d;
 
-        <button id="startButton">
-            let's begin ♡
-        </button>
+    font-size: 12px;
 
-    </section>
+    letter-spacing: 4px;
 
+    text-transform: uppercase;
 
-    <!-- 20 THINGS -->
+    margin-bottom: 25px;
+}
 
-    <section id="things" class="hidden">
 
-        <p id="number">
-            01 / 20
-        </p>
+/* =========================
+   BIG TITLE
+========================= */
 
-        <div class="heart">
-            ♡
-        </div>
+h1 {
+    font-family: 'DM Serif Display', serif;
 
-        <h2 id="title">
-            Motorcycles
-        </h2>
+    font-size: clamp(45px, 8vw, 85px);
 
-        <p id="description">
-            I don't think I'll ever see a bike
-            without thinking of you now.
-        </p>
+    font-weight: normal;
 
-        <button id="nextButton">
-            next ♡
-        </button>
+    line-height: 1.05;
 
-    </section>
+    color: #ffffff;
 
+    text-shadow:
+        0 0 30px rgba(255, 65, 125, 0.15);
+}
 
-    <!-- SLIDE 21 -->
 
-    <section id="slide21" class="hidden">
+/* =========================
+   SUBTITLE
+========================= */
 
-        <p class="tiny-heading">
-            something I never say...
-        </p>
+.subtitle {
+    color: #bda5ae;
 
-        <p>
-            I had given you this website, but you never really looked at it.
-            So I’ll use this as something where I can write all the things that
-            maybe I’ll never be able to tell you or say to you in real life.
-            I don’t know what I’m supposed to write or how I’m supposed to
-            write it, but I guess I’ll just write here the things I can’t talk
-            to you about. I don’t know how long I’ll keep doing this… but yeah.
-        </p>
+    font-size: 14px;
 
-        <p>
-            Sometimes I want to tell you that you’re very indecisive. You can’t
-            seem to decide for yourself what you actually want. Sometimes your
-            behavior is one way, and sometimes it’s completely different. I know
-            it’s not easy. None of this is ever easy. Neither stepping away from
-            it is easy, nor carrying it along with you is easy. But maybe if you
-            make one decision, things might become better.
-        </p>
-
-        <p>
-            I understand all of your behavior. Sometimes you talk to me properly,
-            and sometimes you say that you’ll be busy for the next 15 days just
-            because we’ve started talking a little too much and maybe need some
-            space because we’ve gotten too used to talking to each other.
-        </p>
-
-        <p>
-            Sometimes a thought comes into my mind that maybe you don’t like me,
-            and you just don’t want to explicitly say it and hurt me. Sometimes
-            I feel like maybe all of this is more important to you than I am.
-            I genuinely don’t understand what you feel. I want to come to you
-            and ask you, talk to you, tell you everything, but maybe I can’t.
-            Maybe I never will be able to.
-        </p>
-
-        <p>
-            This whole thing feels to me like… as long as I’m in your life right
-            now, you don’t really want to let me out of it. But as soon as your
-            university ends, or our daily-life interaction ends, maybe all of
-            this will just disappear for you, and the value of all of this will
-            disappear too......
-        </p>
-
-        <button id="slide21NextButton">
-            next ♡
-        </button>
-
-    </section>
-
-
-    <!-- SLIDE 22 -->
-
-    <section id="slide22" class="hidden">
-
-        <p class="tiny-heading">
-            things I never said...
-        </p>
-
-        <p>
-            I hate having these thoughts, but I don’t know… they feel like
-            reality to me.
-        </p>
-
-        <p>
-            Just a day ago, you said, “We are not together.” I know we’re not,
-            but I don’t know why something inside me broke when you said that.
-            It hurt me in such a strange way. I don’t even know why, especially
-            when I’m not holding on to any particular hopes anymore.
-        </p>
-
-        <p>
-            I don’t know, man…
-        </p>
-
-        <p>
-            I feel so bad when I can’t see you or when I can’t come and talk to
-            you in real life. It’s really difficult for me. But I don’t want to
-            make myself dependent on having you around in real life. I don’t
-            want that. I really don’t.
-        </p>
-
-        <p>
-            Sometimes it feels so strange to carry the weight of all these
-            thoughts and still somehow keep myself normal, keep smiling, go to
-            university, and do everything like usual. But I have to. Because
-            how long can anyone keep listening to someone’s problems or tolerate
-            their sad mood?
-        </p>
-
-        <p>
-            The fact that you’ll probably never know about any of these things
-            gives me some peace, but it also hurts me.
-        </p>
-
-        <p>
-            But in the end, you’ll only ever see me smiling.
-            Ordinary yet not so special girl.
-        </p>
-
-        <button id="slide22NextButton">
-            continue ♡
-        </button>
-
-    </section>
-
-
-    <!-- ENDING -->
-
-    <section id="ending" class="hidden">
-
-        <p class="tiny-heading">
-            and finally...
-        </p>
-
-        <h2>
-            you.
-        </h2>
-
-        <p>
-            because somehow, everything reminds me of you anyway. ♡
-        </p>
-
-        <p class="birthday-message"> 
-            happy 20th, my love. 
-        </p>
-
-        <p>
-            I know it might seem small, but I wanted to give you something
-            different and cute. I don’t really know how to make websites lmao,
-            but this was my little attempt. Hope you like it 🤍
-        </p>
-
-    </section>
-
-
-    <script src="script.js"></script>
-
-</body>
-
-</html>
+    margin-top: 25px;
+}
 
+
+/* =========================
+   BUTTONS
+========================= */
+
+button {
+    margin-top: 40px;
+
+    padding: 14px 32px;
+
+    border-radius: 50px;
+
+    border: 1px solid #ff4f87;
+
+    background: transparent;
+
+    color: #ff78a3;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+button:hover {
+    background: #ff4f87;
+
+    color: #070707;
+
+    box-shadow:
+        0 0 30px rgba(255, 79, 135, 0.5);
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   FLOATING HEARTS
+========================= */
+
+.floating-hearts span {
+    position: fixed;
+
+    color: #ff4f87;
+
+    font-size: 16px;
+
+    opacity: 0.25;
+
+    pointer-events: none;
+
+    animation: float 6s infinite ease-in-out;
+
+    z-index: 0;
+}
+
+
+.floating-hearts span:nth-child(1) {
+    left: 10%;
+    top: 20%;
+}
+
+
+.floating-hearts span:nth-child(2) {
+    left: 25%;
+    top: 70%;
+    animation-delay: 1s;
+}
+
+
+.floating-hearts span:nth-child(3) {
+    left: 45%;
+    top: 15%;
+    animation-delay: 2s;
+}
+
+
+.floating-hearts span:nth-child(4) {
+    left: 70%;
+    top: 65%;
+    animation-delay: 3s;
+}
+
+
+.floating-hearts span:nth-child(5) {
+    left: 85%;
+    top: 25%;
+    animation-delay: 4s;
+}
+
+
+.floating-hearts span:nth-child(6) {
+    left: 55%;
+    top: 80%;
+    animation-delay: 2.5s;
+}
+
+
+@keyframes float {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-18px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================
+   20 THINGS
+========================= */
+
+#things {
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #26101a,
+            #070707 70%
+        );
+}
+
+
+#number {
+    color: #ff6f9d;
+
+    font-size: 13px;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 35px;
+}
+
+
+.heart {
+    color: #ff4f87;
+
+    font-size: 28px;
+
+    margin-bottom: 15px;
+
+    animation: heartPulse 2s infinite;
+}
+
+
+@keyframes heartPulse {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+
+#things h2 {
+    font-family: 'DM Serif Display', serif;
+
+    font-size: clamp(45px, 8vw, 75px);
+
+    font-weight: normal;
+}
+
+
+#description {
+    max-width: 550px;
+
+    color: #c7b4bc;
+
+    line-height: 1.9;
+
+    margin-top: 20px;
+
+    font-size: 15px;
+}
+
+
+/* =========================
+   FINAL "YOU" SCREEN
+========================= */
+
+#ending {
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #4b1429,
+            #15090f 45%,
+            #070707 80%
+        );
+}
+
+
+#ending h2 {
+    font-family: 'DM Serif Display', serif;
+
+    font-size: clamp(80px, 15vw, 160px);
+
+    font-weight: normal;
+
+    color: #ff78a3;
+
+    text-shadow:
+        0 0 40px rgba(255, 78, 135, 0.35);
+}
+
+
+#ending p {
+    max-width: 500px;
+
+    color: #d6c0c8;
+
+    line-height: 1.8;
+
+    margin-top: 20px;
+}
+
+
+#ending .birthday-message {
+    color: #ff78a3;
+
+    margin-top: 35px;
+
+    font-size: 18px;
+}
+
+
+/* =========================
+   SLIDE 21 & SLIDE 22
+========================= */
+
+#slide21,
+#slide22 {
+
+    min-height: 100vh;
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 70px 25px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #32101f 0%,
+            #160a10 45%,
+            #070707 85%
+        );
+
+    overflow-y: auto;
+}
+
+
+/* =========================
+   TEXT INSIDE SLIDES
+========================= */
+
+#slide21 p,
+#slide22 p {
+
+    width: 100%;
+
+    max-width: 750px;
+
+    color: #d6c0c8;
+
+    font-size: 15px;
+
+    line-height: 1.9;
+
+    margin-top: 20px;
+
+}
+
+
+/* First small heading */
+
+#slide21 .tiny-heading,
+#slide22 .tiny-heading {
+
+    color: #ff6f9d;
+
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 15px;
+
+    margin-top: 0;
+}
+
+
+/* =========================
+   SLIDE 21 / 22 BUTTONS
+========================= */
+
+#slide21 button,
+#slide22 button {
+
+    margin-top: 35px;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   EXTRA SPACE BETWEEN
+   LONG PARAGRAPHS
+========================= */
+
+#slide21 p + p,
+#slide22 p + p {
+
+    margin-top: 25px;
+}
+
+
+/* =========================
+   HIDDEN SECTIONS
+========================= */
+
+.hidden {
+    display: none !important;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    #intro,
+    #things,
+    #ending,
+    #slide21,
+    #slide22 {
+
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    #description {
+
+        font-size: 14px;
+
+        line-height: 1.8;
+    }
+
+
+    #slide21,
+    #slide22 {
+
+        justify-content: flex-start;
+
+        padding-top: 60px;
+
+        padding-bottom: 60px;
+    }
+
+
+    #slide21 p,
+    #slide22 p {
+
+        font-size: 14px;
+
+        line-height: 1.85;
+
+        max-width: 100%;
+    }
+
+
+    #slide21 .tiny-heading,
+    #slide22 .tiny-heading {
+
+        font-size: 10px;
+
+        letter-spacing: 3px;
+    }
+
+
+    #ending h2 {
+
+        font-size: clamp(75px, 25vw, 120px);
+    }
+
+
+    button {
+
+        padding: 13px 28px;
+
+        font-size: 13px;
+    }
+
+}
