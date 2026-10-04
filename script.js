@@ -108,18 +108,26 @@ const thingsList = [
 
 
 // ================================
-// FIND THE ELEMENTS ON OUR PAGE
+// FIND THE ELEMENTS
 // ================================
 
 const startButton = document.getElementById("startButton");
 
 const nextButton = document.getElementById("nextButton");
 
+const slide21Button = document.getElementById("slide21Button");
+
+const slide22Button = document.getElementById("slide22Button");
+
 const intro = document.getElementById("intro");
 
 const things = document.getElementById("things");
 
 const ending = document.getElementById("ending");
+
+const slide21 = document.getElementById("slide21");
+
+const slide22 = document.getElementById("slide22");
 
 const number = document.getElementById("number");
 
@@ -129,7 +137,7 @@ const description = document.getElementById("description");
 
 
 // ================================
-// KEEP TRACK OF WHICH THING WE'RE ON
+// KEEP TRACK OF WHICH THING
 // ================================
 
 let currentThing = 0;
@@ -165,6 +173,8 @@ nextButton.addEventListener("click", function() {
 
         ending.classList.remove("hidden");
 
+        window.scrollTo(0, 0);
+
         return;
     }
 
@@ -187,3 +197,34 @@ nextButton.addEventListener("click", function() {
         thingsList[currentThing].description;
 
 });
+
+
+// ================================
+// SLIDE 20 → SLIDE 21
+// ================================
+
+slide21Button.addEventListener("click", function() {
+
+    ending.classList.add("hidden");
+
+    slide21.classList.remove("hidden");
+
+    window.scrollTo(0, 0);
+
+});
+
+
+// ================================
+// SLIDE 21 → SLIDE 22
+// ================================
+
+slide22Button.addEventListener("click", function() {
+
+    slide21.classList.add("hidden");
+
+    slide22.classList.remove("hidden");
+
+    window.scrollTo(0, 0);
+
+});
+
