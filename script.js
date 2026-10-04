@@ -211,6 +211,11 @@ slide21Button.addEventListener("click", function() {
 
     window.scrollTo(0, 0);
 
+    // Track that Slide 21 was reached
+    if (typeof gtag === "function") {
+        gtag("event", "reached_slide_21");
+    }
+
 });
 
 
@@ -226,5 +231,11 @@ slide22Button.addEventListener("click", function() {
 
     window.scrollTo(0, 0);
 
+    // Track that Slide 22 was reached
+    if (typeof gtag === "function") {
+        gtag("event", "reached_slide_22");
+    }
+
 });
+
 
